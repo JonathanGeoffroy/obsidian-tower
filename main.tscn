@@ -1,11 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvwok18rblo8j"]
+[gd_scene load_steps=4 format=3 uid="uid://dvwok18rblo8j"]
 
 [ext_resource type="PackedScene" uid="uid://t0wyrohujutg" path="res://crosshair/crosshair.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dynxor4gtdvcb" path="res://player/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dvhcdeyesufk4" path="res://light/flash_light.tscn" id="3_h2yge"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Crosshair" parent="." instance=ExtResource("1_0xm2m")]
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+antialiased = true
+polygon = PackedVector2Array(0, 0, 2000, 0, 2000, 2000, 0, 2000)
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(518, 259)
+
+[node name="FlashLight" parent="Player" instance=ExtResource("3_h2yge")]
+
+[node name="Crosshair" parent="." instance=ExtResource("1_0xm2m")]

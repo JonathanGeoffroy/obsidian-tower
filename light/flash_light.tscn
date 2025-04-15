@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvhcdeyesufk4"]
+
+[ext_resource type="Texture2D" uid="uid://cm2ut4m1u7chf" path="res://assets/Light.png" id="1_62cjx"]
+
+[node name="FlashLight" type="Node2D"]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(234, 0)
+color = Color(1, 1, 1, 0.431373)
+energy = 3.4
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.596078)
+shadow_filter = 1
+shadow_filter_smooth = 2.2
+texture = ExtResource("1_62cjx")
+texture_scale = 0.5
