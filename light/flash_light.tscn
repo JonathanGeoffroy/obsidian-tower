@@ -5,12 +5,11 @@
 [node name="FlashLight" type="Node2D"]
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(234, 0)
-color = Color(1, 1, 1, 0.431373)
-energy = 3.4
+position = Vector2(2.38419e-07, 0)
+scale = Vector2(0.2, 0.2)
 shadow_enabled = true
-shadow_color = Color(0, 0, 0, 0.596078)
+shadow_color = Color(0, 0, 0, 0.317647)
 shadow_filter = 1
 shadow_filter_smooth = 2.2
 texture = ExtResource("1_62cjx")
-texture_scale = 0.5
+offset = Vector2(470, 0)

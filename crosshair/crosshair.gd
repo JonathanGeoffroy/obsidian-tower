@@ -8,7 +8,8 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	position = get_global_mouse_position()
+	position = get_viewport().get_mouse_position()
+
 
 
 func _exit_tree() -> void:
